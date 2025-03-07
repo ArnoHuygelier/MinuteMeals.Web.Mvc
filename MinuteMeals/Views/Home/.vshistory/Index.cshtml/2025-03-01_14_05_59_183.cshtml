@@ -1,0 +1,20 @@
+﻿@model List<Recipe>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">MinuteMeals: Snel & Smakelijk</h1>
+</div>
+
+<div class="container">
+    <div class="row d-flex justify-content-center">
+        @foreach (var recipe in Model)
+        {
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex">
+                <partial name="RecipeCardPartial" model="recipe" />
+            </div>
+        }
+    </div>
+</div>

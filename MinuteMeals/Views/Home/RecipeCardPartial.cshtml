@@ -1,0 +1,14 @@
+﻿@model Recipe
+
+<div class="card border-2 shadow d-flex justify-content-center align-items-center text-center" style="max-width: 600px; min-width: 200px;">
+    <div class="card-body">
+        <h5 class="card-title">@Model.Name</h5>
+        <p class="card-text"><strong>Kooktijd:</strong> @Model.CookingTimeInMinutes minuten</p>
+        <a asp-controller="Home" asp-action="Recipe" asp-route-id="@Model.Id" class="btn btn-primary border-0 shadow-sm" style="background-color: green;">
+            Bekijk recept!
+        </a>
+    </div>
+</div>
+
+
+

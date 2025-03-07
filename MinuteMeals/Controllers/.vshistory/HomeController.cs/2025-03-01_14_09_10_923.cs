@@ -20,12 +20,9 @@ public class HomeController : Controller
         return View(recipes);
     }
 
-    [HttpGet()]
-    [Route("recipe/{id}")]
     public IActionResult Recipe(int id)
     {
-        Recipe? recipe = database.recipes.FirstOrDefault(x => x.Id == id);
-        return View(recipe);
+        return View(id);
     }
 
 

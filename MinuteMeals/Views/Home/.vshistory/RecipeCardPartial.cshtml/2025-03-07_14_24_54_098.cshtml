@@ -1,0 +1,9 @@
+﻿@model Recipe
+
+<div class="card" style="width: 80%;">
+    <h5>@Model.Name</h5>
+    <p><strong>Kooktijd:</strong> @Model.CookingTimeInMinutes minuten</p>
+    <a asp-controller="Home" asp-action="Recipe" asp-route-id="@Model.Id">Bekijk recept</a>
+</div>
+
+

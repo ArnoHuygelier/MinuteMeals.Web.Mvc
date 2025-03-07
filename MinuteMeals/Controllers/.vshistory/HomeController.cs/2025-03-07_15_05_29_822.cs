@@ -24,7 +24,7 @@ public class HomeController : Controller
     [Route("recipe/{id}")]
     public IActionResult Recipe(int id)
     {
-        Recipe? recipe = database.recipes.FirstOrDefault(x => x.Id == id);
+        Recipe? recipe = database.recipes.FirstOrDefault(x => x.Id == ol);
         return View(recipe);
     }
 

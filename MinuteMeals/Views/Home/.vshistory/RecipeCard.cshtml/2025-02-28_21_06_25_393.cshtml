@@ -1,0 +1,11 @@
+﻿@model Recipe
+
+<div class="card" style="width: 18rem;">
+    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Recipe Image">
+    <div class="card-body">
+        <h5 class="card-title">@Model.Name</h5>
+        <p class="card-text"><strong>Ingrediënten:</strong> @Model.Ingredients</p>
+        <p class="card-text"><strong>Stappen:</strong> @Model.Steps</p>
+        <p class="card-text"><strong>Kooktijd:</strong> @Model.CookingTimeInMinutes minuten</p>
+    </div>
+</div>

@@ -20,14 +20,6 @@ public class HomeController : Controller
         return View(recipes);
     }
 
-    [HttpGet()]
-    [Route("recipe/{id}")]
-    public IActionResult Recipe(int id)
-    {
-        Recipe? recipe = database.recipes.FirstOrDefault(x => x.Id == id);
-        return View(recipe);
-    }
-
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()

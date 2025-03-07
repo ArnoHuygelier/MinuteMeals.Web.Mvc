@@ -1,0 +1,10 @@
+﻿@model List<Recipe>
+
+@{
+    ViewData["Title"] = "Recipe edit page";
+}
+
+@foreach(var recipe in Model)
+{
+    <partial name="RecipeRowPartial" model="recipe" />
+}

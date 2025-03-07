@@ -20,7 +20,6 @@ public class HomeController : Controller
         return View(recipes);
     }
 
-    [HttpGet()]
     [Route("recipe/{id}")]
     public IActionResult Recipe(int id)
     {

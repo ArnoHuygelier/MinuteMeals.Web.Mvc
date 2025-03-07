@@ -1,0 +1,29 @@
+﻿@model Recipe
+@{
+    ViewData["Title"] = "Recipe - " + @Model.Name;
+}
+
+<div class="text-center ">
+    <h1 class="display-4 mb-4">@Model.Name: Snel & Smakelijk</h1>
+</div>
+
+<div class="container d-flex justify-content-center text-center align-items-center">
+    <div class="card shadow-lg w-80" style="width: 80%;">
+        <div class="card-header bg-primary text-white">
+            <h5 class="card-title mb-0">@Model.Name</h5>
+        </div>
+        <div class="card-body">
+            <h6 class="card-subtitle mb-2 text-muted">Kooktijd: @Model.CookingTimeInMinutes minuten</h6>
+            <p><strong>Ingrediënten:</strong></p>
+            <p>@Model.Ingredients</p>
+            <p><strong>Bereidingswijze:</strong></p>
+            <p>@Model.Steps</p>
+        </div>
+        <div class="card-footer text-end">
+            <a href="/" class="btn btn-secondary">Terug</a>
+        </div>
+    </div>
+</div>
+
+
+

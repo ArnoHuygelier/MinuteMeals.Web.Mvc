@@ -69,7 +69,7 @@ namespace MinuteMeals.Core
                 new Recipe
                 {
                     Id = 8,
-                    Name = "Biefstuk",
+                    Name = "Biefstuk met kruidenboter",
                     Ingredients = "Biefstuk, boter, knoflook, kruiden",
                     Steps = "Bak de biefstuk naar wens. Smelt kruidenboter eroverheen.",
                     CookingTimeInMinutes = 15

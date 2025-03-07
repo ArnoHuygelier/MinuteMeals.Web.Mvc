@@ -1,0 +1,14 @@
+﻿@model Recipe
+
+<div class="col-md-3">
+    <div class="card shadow-lg">
+        <div class="card-header bg-primary text-white">
+            <h5 class="card-title mb-0">@Model.Name</h5>
+        </div>
+        <div class="card-body position-relative">
+            <p class="card-text"><strong>Kooktijd:</strong> @Model.CookingTimeInMinutes minuten</p>
+            <a asp-controller="Home" asp-action="Recipe" asp-route-id="@Model.Id" class="stretched-link"></a>
+        </div>
+    </div>
+</div>
+
